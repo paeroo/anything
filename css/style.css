@@ -784,7 +784,8 @@
 
     /*main-mouse*/
     section.main-mouse .inner{
-        padding: 0;
+        padding: 0 0 30px 0;
+        height: 90vh;
     }
     .main-mouse .slider-wrap{
         flex-direction: column;
@@ -833,8 +834,8 @@
 
     /*mouse-list*/
     .mouse-list .inner{
-        height: 115vh;
         padding: 20px 40px 0;
+        height: 100%;
     }
     .mouse-list .mouse-title{
         margin-bottom: 30px;
@@ -857,8 +858,8 @@
 
     /*photo-list*/
     .photo-list .inner{
-        padding-top: 30px;
-        height: 450vh;
+        padding: 30px 0 100px;
+        height: 100%;
     }
     .photo-list .photo-title{
         margin-bottom: 30px;
@@ -901,8 +902,8 @@
     }
     /*razer-contents */
     .razer-contents .inner{
-        padding: 30px 20px 0;
-        height: 300vh;
+        padding: 30px 20px 50px;
+        height: 100%;
     }
     .razer-contents h2{
         margin-bottom: 30px;
