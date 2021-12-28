@@ -1,0 +1,448 @@
+
+.inner{
+    background: #000;
+}
+.header .category-header{
+    position: fixed;
+    top: 70px;
+    transition: all 0.3s;
+    padding: 0 140px;
+    background: rgb(20, 20, 20);
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+}
+.category-header.up{
+    top: 0;
+}
+.category-header h2{
+    float: left;
+    margin-right: 100px;
+    color: white;
+    padding-top: 15px;
+}
+.category-header ul{
+    float: left;
+    display: flex;
+}
+.category-header ul li{
+    margin-right: 50px;
+    padding: 20px 0;
+}
+.category-header ul li{
+    color: grey;
+}
+.category-header ul li:hover{
+    color: #44d62c;
+}
+.header span{
+    top: 60px;
+}
+/*.intro*/
+.intro{
+    height: 110vh;
+}
+.video{
+    height: 110%;
+    background: #000;
+    position: relative;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+}
+.video div{
+    top: 0;
+    width: 100%;
+    height: 112%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+}
+/*main-keyboard*/
+.main-keyboard .inner{
+    padding: 150px 150px;
+    height: 110vh;
+}
+.keyboard-slide{
+    height: 100%;
+}
+.keyboard-slide .slide-item{
+    display: flex;
+    height: 100%;
+}
+.slide-item .main-img{
+    flex: 1;
+    height: 675px;
+    position: relative;
+}
+.main-img h3{
+    color: #44d62c;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+    transition: all 1s;
+    opacity: 0;
+}
+.slide-item.slick-active .main-img h3{
+    top: 100px;
+    opacity: 1;
+}
+.keyboard-slide .slide-item img{
+    height: 100%;
+    object-fit: cover;
+}
+.slide-item .desc-wrap{
+    height: 675px;
+    padding: 50px 50px;
+    margin-bottom: 0;
+    background: rgba(20, 20, 20, 0.86);
+    flex: 1;
+}
+.desc-wrap:after{
+    content: '';
+    display: block;
+    width: 121%;
+    border-bottom: 1px solid #00ff00;
+    height: 1px;
+    transform: translate(-50px, 72px);
+}
+.slide-item .desc-wrap div{
+    height: 250px;
+}
+.slide-item .desc-wrap div h3{
+    color: #44d62c;
+    margin-bottom: 50px;
+    font-size: 25px;
+    transition: all 0.7s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.desc-wrap div:nth-child(1){
+    margin-bottom: 50px;
+}
+.slide-item .desc-wrap div p{
+    transition: all 0.7s 0.3s;
+    line-height: 2em;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.slide-item .desc-wrap div:nth-child(2) h3{
+    transition-delay: 0.5s;
+}
+.slide-item .desc-wrap div:nth-child(2) p{
+    transition-delay: 0.7s;
+}
+.slide-item.slick-active .desc-wrap h3,
+.slide-item.slick-active .desc-wrap p {
+    opacity: 1;
+    transform: translateY(0);
+}
+.slide-item.slick-active .desc-wrap:after{
+    animation: slider-loading 5s linear 1;
+}
+
+    /*keyboard-scroll*/
+.keyboard-scroll .inner{
+    padding: 150px 0;
+    height: 200vh;
+}
+.keyboard-scroll .inner .scroll-wrap{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(50, 50, 50, 0.5) ), url("../images/scroll/scroll-bg.jpg")no-repeat center fixed;
+    background-blend-mode: multiply;
+}
+.scroll-wrap > div{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    transition: all 0.1s;
+    z-index: 1;
+}
+.scroll-wrap .scroll-box1{
+    top: 300px;
+    left: 0;
+}
+.scroll-wrap .scroll-box2{
+    top: 500px;
+    left: 900px;
+}
+.scroll-wrap .scroll-box3{
+    top: 700px;
+    right: 300px;
+}
+.scroll-wrap .scroll-box4{
+    top: 800px;
+    left: 600px;
+}
+.scroll-wrap .scroll-box5{
+    top: 400px;
+    right: 0;
+}
+.scroll-wrap .scroll-box6{
+    top: 600px;
+    left: 300px;
+}
+.scroll-wrap .scroll-box7{
+    bottom: 50px;
+    left: 650px;
+    width: 200px;
+    height: 200px;
+    padding-left: 8px;
+}
+.scroll-wrap .scroll-box8{
+    left: 850px;
+    bottom: 400px;
+    width: 200px;
+    height: 200px;
+}
+.scroll-wrap .scroll-box9{
+    left: 1050px;
+    bottom: -150px;
+    width: 200px;
+    height: 200px;
+}
+.scroll-wrap .scroll-box10{
+    top: 830px;
+    left: 0;
+    width: 600px;
+    height: 200px;
+    z-index: 0;
+}
+.scroll-box7, .scroll-box8, .scroll-box9{
+    padding-top: 150px;
+}
+.scroll-wrap div h2{
+    color: #44d62c;
+    font-size: 44px;
+}
+.scroll-wrap div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.scroll-wrap .scroll-box10 img{
+    width: 550px;
+    height: 160px;
+    padding: 20px;
+    object-fit: initial;
+}
+/*keyboard-list*/
+.keyboard-list{}
+.keyboard-list .inner{
+    padding: 200px 150px;
+    height: 200vh;
+}
+.keyboard-list .inner .keyboard-list-wrap{
+    height: 40%;
+    display: flex;
+}
+.keyboard-list-wrap > div{
+    height: 100%;
+}
+.keyboard-list .keyboard-img{
+    width: 1100px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.keyboard-list-wrap .keyboard-img div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.keyboard-list-wrap:nth-child(1) .keyboard-img div{
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(50, 50, 50, 0.1), rgba(0, 0, 0, 0.9));
+}
+.keyboard-list-wrap:nth-child(2) .keyboard-img div{
+    background: linear-gradient(15deg, rgba(0, 0, 0, 0.9), rgba(50, 50, 50, 0.1), rgba(0, 0, 0, 0.9));
+}
+.keyboard-list .keyboard-desc{
+    flex: 1;
+    background: rgba(20, 20, 20, 0.86);
+    padding: 30px 50px;
+}
+.keyboard-desc:after{
+    content: '';
+    border-bottom: 1px solid #00ff00;
+    height: 1px;
+    display: block;
+    width: 0;
+    transform: translate(-50px, 64px);
+    transition: all 1s 0.5s;
+}
+
+.keyboard-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+.keyboard-list-wrap:nth-child(1){
+    margin-bottom: 300px;
+}
+.keyboard-list-wrap:nth-child(2) .keyboard-img{
+    margin-right: 0;
+}
+.keyboard-list .keyboard-desc div{
+    margin-bottom: 50px;
+    height: 410px;
+}
+.keyboard-desc a{
+    display: block;
+    width: 250px;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid #fff;
+    font-weight: bold;
+    transition: all 0.5s 1.2s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.keyboard-desc a:hover{
+    animation: a-hover 1s linear infinite;
+}
+.keyboard-desc div h3{
+    margin-bottom: 50px;
+    color: #44d62c;
+    font-size: 25px;
+    transition: all 0.5s 0.5s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.keyboard-desc div strong{
+    margin-bottom: 50px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.5s 0.7s;
+    transform: translateY(20px);
+    opacity: 0;
+}
+.keyboard-desc div p{
+    line-height: 2em;
+    transition: all 0.5s 0.9s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+.keyboard-list-wrap.active .keyboard-desc a,
+.keyboard-list-wrap.active .keyboard-desc div h3,
+.keyboard-list-wrap.active .keyboard-desc div strong,
+.keyboard-list-wrap.active .keyboard-desc div p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.keyboard-list-wrap.active .keyboard-img img{
+    transform: scale(1);
+}
+.keyboard-list-wrap.active .keyboard-desc:after{
+    width: 125%;
+}
+/*contents-list*/
+.contents-list{}
+.contents-list .inner{
+    background: #fff;
+    padding: 100px 150px;
+}
+.contents-list .contents-title{
+    height: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contents-list .contents-title h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.contents-list .contents-title strong{
+    font-size: 25px;
+}
+.contents-list .list-wrap{
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.list-wrap > div {
+    width: 380px;
+    height: 100%;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s;
+}
+.list-wrap > div.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.list-wrap div .list-img{
+    height: 45%;
+}
+.list-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.list-wrap > div:nth-child(4) .list-img img{
+    object-fit: contain;
+}
+.list-wrap div .list-desc{
+    height: 45%;
+    padding: 15px 20px 0;
+}
+.list-wrap div a{
+    color: #000;
+    font-weight: bold;
+    padding-left: 20px;
+    transition: all 0.1s;
+}
+.list-wrap div a:after{
+    margin-left: 20px;
+    content: '';
+    display: block;
+    width: 0;
+    transition: all 0.1s;
+    height: 1px;
+    background: #44d62c;
+}
+.list-wrap div a:hover{
+    color: #44d62c;
+}
+.list-wrap div a:hover:after{
+    width: 80px;
+}
+.list-wrap .list-desc h3{
+    color: #44d62c;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.list-wrap .list-desc strong{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.list-wrap .list-desc p{
+    color: #000;
+}
+@keyframes slider-loading {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 121%;
+    }
+}
+@media (max-width: 767px){
+    .header .category-header{
+        top: 105px;
+        padding: 0;
+    }
+    .category-header.up{
+        top: 0;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
