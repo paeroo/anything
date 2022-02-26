@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
             innerHeader.classList.add('hide');
             categoryHeader.classList.add('up');
         }else{
-            if (window.innerWidth >= 300 && window.innerHeight < 767){
+           /* if (window.innerWidth >= 300 && window.innerWidth < 767){
                 if (window.scrollY <= headerTop){
                     innerHeader.classList.remove('hide');
                     categoryHeader.classList.remove('up');
@@ -43,7 +43,9 @@ window.addEventListener('DOMContentLoaded', ()=> {
                     innerHeader.classList.remove('hide');
                     categoryHeader.classList.remove('up');
                 }
-            }
+            }*/
+            innerHeader.classList.remove('hide');
+            categoryHeader.classList.remove('up');
         }
         scrollTop = windowScrollTop;
 
